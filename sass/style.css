@@ -43,4 +43,9 @@ h5 {
   line-height: 26px;
 }
 
+.container {
+  max-width: 1197px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */
