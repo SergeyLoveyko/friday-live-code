@@ -1,10 +1,17 @@
-@import "abstract/constants.scss";
+// @import "../node_modules/normalize-scss/sass/normalize";
+@import "base/normalize";
 
+//  Abstract
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+//  Base
 @import "base/base";
 @import "base/buttons";
 @import "base/logo";
 
-// Layouts
+//  Layouts
 @import "layouts/header";
 @import "layouts/container";
 
