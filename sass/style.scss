@@ -1,6 +1,12 @@
 @import "abstract/constants.scss";
+
 @import "base/base";
+@import "base/buttons";
+
+// Layouts
+@import "layouts/header";
 @import "layouts/container";
 
 //  Components
-@import "components/contact-us"
+@import "components/contact-us";
+@import "components/promo";
