@@ -13,10 +13,13 @@
 @import "base/icons";
 
 //  Layouts
-@import "layouts/header";
 @import "layouts/container";
+@import "layouts/header";
+@import "layouts/columns";
 
 //  Components
 @import "components/contact-us";
 @import "components/promo";
 @import "components/nav";
+@import "components/tools";
+@import "components/strategies";
