@@ -315,11 +315,15 @@ section, main, header, footer, article {
   box-sizing: border-box;
 }
 
-.logo-path {
+.nav__link, .logo-path, .link-button:hover {
   transition: all 0.3s ease-out;
 }
 
-h1 {
+.button, body {
+  font-family: "Open Sans", "Verdana", "sans-serif";
+}
+
+.promo__text, .link-button, h1 {
   font-family: "Poppins", "Verdana", "sans-serif";
 }
 
@@ -328,8 +332,10 @@ html {
 }
 
 body {
-  font-family: "Open Sans", "Verdana", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
   font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 h1 {
@@ -355,7 +361,7 @@ h3 {
 
 h4 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2.2rem;
   line-height: 3rem;
 }
@@ -368,7 +374,6 @@ h5 {
 }
 
 .button {
-  font-family: "Open Sans", "Verdana", "sans-serif";
   padding: 11px 25px 13px;
   font-style: normal;
   font-weight: 600;
@@ -378,31 +383,55 @@ h5 {
   cursor: pointer;
   transition: all 0.3s;
 }
-
 .button_bordered {
   background: #FFFFFF;
   border: 1px solid #D7D7D7;
   color: #544837;
 }
-
+.button_bordered:hover {
+  background: #BCD0E5;
+  border-color: #BCD0E5;
+}
 .button_colored {
   background: #FF9900;
   color: #FFFFFF;
   border: 1px solid #FF9900;
 }
-
-.button_bordered:hover {
-  background: #BCD0E5;
-  border-color: #BCD0E5;
-}
-
 .button_colored:hover {
   background: #FF7549;
   border-color: #FF7549;
 }
 
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  color: #FF9900;
+}
+.link-button:hover {
+  color: #FF7549;
+}
+
+.link-button__text {
+  margin-left: 9px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
 .logo-svg:hover .logo-path {
   fill: #FF9900;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ico_play {
+  background-image: url("../../img/icons/play.svg");
+  width: 18px;
+  height: 19px;
 }
 
 .header {
@@ -415,18 +444,6 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.nav {
-  display: flex;
-  font-size: 1.5rem;
-  line-height: 2.8rem;
-}
-
-.nav__link {
-  list-style: none;
-  padding: 0 10px;
-  cursor: pointer;
 }
 
 .header__buttons > .button {
@@ -465,12 +482,36 @@ h5 {
   line-height: 2.8rem;
 }
 
+.promo__title {
+  margin: 0 0 30px;
+}
+
 .promo__text {
-  margin-bottom: 45px;
+  max-width: 487px;
+  margin: 0 0 45px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 }
 
 .promo__buttons > * {
   margin-right: 44px;
+}
+
+.nav {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.nav__link {
+  list-style: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.nav__link:hover {
+  color: #FF9900;
 }
 
 /*# sourceMappingURL=style.css.map */
