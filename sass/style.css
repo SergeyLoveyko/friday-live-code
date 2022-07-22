@@ -315,7 +315,7 @@ section, main, header, footer, article {
   box-sizing: border-box;
 }
 
-.nav__link, .logo-path, .link-button:hover {
+.nav__link, .footer-nav__links a, .logo-path, .link-button:hover {
   transition: all 0.3s ease-out;
 }
 
@@ -323,7 +323,7 @@ section, main, header, footer, article {
   font-family: "Open Sans", "Verdana", "sans-serif";
 }
 
-.promo__text, .link-button, h1 {
+.promo__text, .footer-nav__links, .link-button, h1 {
   font-family: "Poppins", "Verdana", "sans-serif";
 }
 
@@ -562,8 +562,67 @@ h5 {
   flex-basis: 46%;
 }
 
+.footer {
+  padding: 60px 0 70px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer-nav {
+  flex-grow: 1;
+  padding-left: 152px;
+}
+
+.footer-nav__title {
+  margin: 0 0 15px;
+}
+
+.footer-nav__links {
+  padding: 0;
+  list-style-type: none;
+}
+.footer-nav__links a {
+  color: #544837;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+}
+.footer-nav__links a:hover {
+  color: #FF9900;
+}
+
 .contact-us {
+  padding: 62px 82px;
   background: #FFEEE1;
+}
+
+.contact-us__forma input, .contact-us__forma textarea {
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  padding: 10px 21px;
+}
+.contact-us__forma input:focus, .contact-us__forma textarea:focus {
+  border: 1px solid #FF9900;
+  outline: none;
+}
+.contact-us__forma textarea {
+  resize: none;
+  width: 100%;
+  height: 160px;
+}
+
+.contact-us__line {
+  margin-bottom: 19px;
+}
+
+.contact-us__button > * {
+  min-width: 117px;
 }
 
 .promo {
