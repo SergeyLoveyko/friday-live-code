@@ -12,7 +12,7 @@ $image-gap: 32px;
 }
 
 .employee__name {
-  margin: 0;
+  margin: 0px 0 4px;
 }
 
 .employee__title {
@@ -32,7 +32,11 @@ $image-gap: 32px;
 
 .employee__foto {
   position: absolute;
-  top: 5px;
-  right: -($image-gap * 2);
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  top: 20px;
+  right: -$image-gap;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }
 

@@ -16,6 +16,11 @@
   text-decoration: none;
   @include font($size: 2.5rem, $height: 2.6rem, $weight: normal);
   color: $color-text;
+
+  &:hover {
+    color: $color-additional;
+    @extend %transition;
+  }
 }
 
 .contact-us__forma {
