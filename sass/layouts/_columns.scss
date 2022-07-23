@@ -9,3 +9,7 @@
 .layout-2-column {
   @include columns($width: 46%);
 }
+
+.layout-2-column-form {
+  @include columns($width: 49%);
+}

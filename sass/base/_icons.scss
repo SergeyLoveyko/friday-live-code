@@ -54,3 +54,24 @@
   height: 17px;
 }
 
+.icon-round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-light;
+}
+
+.ico_phon {
+  width: 13px;
+  height: 13px;
+  background-image: url("../../img/icons/phone.svg");
+}
+
+.ico_letter {
+  width: 11px;
+  height: 8px;
+  background-image: url("../../img/icons/letter.svg");
+}

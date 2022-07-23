@@ -3,6 +3,21 @@
   background: $color-background;
 }
 
+.contact-us__title {
+  margin: 0 0 17px;
+}
+
+.contact-us__text {
+  margin: 0 0 60px;
+}
+
+.contact-us__contact {
+  margin-left: 10px;
+  text-decoration: none;
+  @include font($size: 2.5rem, $height: 2.6rem, $weight: normal);
+  color: $color-text;
+}
+
 .contact-us__forma {
   input, textarea {
     border: none;
@@ -32,4 +47,10 @@
   >* {
     min-width: 117px;
   }
+}
+
+.contact-us__link {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 20px;
 }
