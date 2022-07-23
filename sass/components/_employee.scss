@@ -1,0 +1,38 @@
+$image-gap: 32px;
+
+.employee-container {
+   padding-right: $image-gap;
+}
+
+.employee {
+  position: relative;
+  display: flex;
+  padding: 35px;
+  width: calc(30% - $image-gap);
+}
+
+.employee__name {
+  margin: 0;
+}
+
+.employee__title {
+  margin: 0;
+  @include font($size: 1.4rem, $weight: normal);
+}
+
+.employee__contact {
+  @include font($size: 1.4rem, $weight: normal);
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.employee__foto {
+  position: absolute;
+  top: 5px;
+  right: -($image-gap * 2);
+}
+

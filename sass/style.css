@@ -595,34 +595,19 @@ h5 {
   color: #FF9900;
 }
 
-.contact-us {
-  padding: 62px 82px;
-  background: #FFEEE1;
+.nav {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
 }
 
-.contact-us__forma input, .contact-us__forma textarea {
-  border: none;
-  border-radius: 5px;
-  border: 1px solid #FFFFFF;
-  background-color: #FFFFFF;
-  padding: 10px 21px;
+.nav__link {
+  list-style: none;
+  padding: 0 10px;
+  cursor: pointer;
 }
-.contact-us__forma input:focus, .contact-us__forma textarea:focus {
-  border: 1px solid #FF9900;
-  outline: none;
-}
-.contact-us__forma textarea {
-  resize: none;
-  width: 100%;
-  height: 160px;
-}
-
-.contact-us__line {
-  margin-bottom: 19px;
-}
-
-.contact-us__button > * {
-  min-width: 117px;
+.nav__link:hover {
+  color: #FF9900;
 }
 
 .promo {
@@ -659,21 +644,6 @@ h5 {
 
 .promo__buttons > * {
   margin-right: 44px;
-}
-
-.nav {
-  display: flex;
-  font-size: 1.5rem;
-  line-height: 2.8rem;
-}
-
-.nav__link {
-  list-style: none;
-  padding: 0 10px;
-  cursor: pointer;
-}
-.nav__link:hover {
-  color: #FF9900;
 }
 
 .tools__container {
@@ -730,6 +700,89 @@ h5 {
 
 .strategy__name {
   margin: 0 0 29px;
+}
+
+.about-us {
+  padding: 30px 0 100px;
+}
+
+.about-us__title {
+  margin: 0 0 14px;
+}
+
+.about-us__description {
+  margin: 0 0 45px;
+}
+
+.employee-container {
+  padding-right: 32px;
+}
+
+.employee {
+  position: relative;
+  display: flex;
+  padding: 35px;
+  width: calc(30% - 32px);
+}
+
+.employee__name {
+  margin: 0;
+}
+
+.employee__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+.employee__contact {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #1943EF;
+  text-decoration: none;
+}
+.employee__contact:hover {
+  text-decoration: underline;
+}
+
+.employee__foto {
+  position: absolute;
+  top: 5px;
+  right: -64px;
+}
+
+.contact-us {
+  padding: 62px 82px;
+  background: #FFEEE1;
+}
+
+.contact-us__forma input, .contact-us__forma textarea {
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  padding: 10px 21px;
+}
+.contact-us__forma input:focus, .contact-us__forma textarea:focus {
+  border: 1px solid #FF9900;
+  outline: none;
+}
+.contact-us__forma textarea {
+  resize: none;
+  width: 100%;
+  height: 160px;
+}
+
+.contact-us__line {
+  margin-bottom: 19px;
+}
+
+.contact-us__button > * {
+  min-width: 117px;
 }
 
 /*# sourceMappingURL=style.css.map */
