@@ -12,17 +12,21 @@
 </head>
 <body>
   
+  
   <header class="header">
     <div class="container header__container">
       <!-- <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a> -->
-      <a href="#" class="logo">
-        <object class="svg-object" data="./img/logo.svg" type="image/svg+xml">
-          Your browser does not support SVG
-        </object>
-      </a>
+      <div class="header__logo-line">
+        <span class="hamburger">
+          <span class="hamburger__line"></span>
+        </span>
+        <a href="#" class="logo header__logo">
+          <object class="logo-object" data="./img/logo.svg" type="image/svg+xml">
+            Your browser does not support SVG
+          </object>
+        </a>
+      </div>
       
-
-      </object>
       <nav class="header__nav">
         <ul class="nav">
           <li class="nav__link">Home</li>
@@ -116,7 +120,7 @@
         <span class="tag tag_bordered">Culture</span>
         <span class="tag tag_bordered">Design</span>
       </div>
-      <div class="layout-3-column strategies-wrapper">
+      <div class="layout-3-column strategy-wrapper">
         <div class="strategy block-shadowed">
           <img class="strategy__image" src="./img/strategies/1.jpg" alt="strategy">
           <div class="strategy__content">
@@ -286,7 +290,9 @@
   <footer class="footer">
     <div class="container footer__container">
       <a href="#" class="logo">
-        <img src="./img/logo.png" alt="Productly LCC">
+        <object class="logo-object" data="./img/logo.svg" type="image/svg+xml">
+          Your browser does not support SVG
+        </object>
       </a>
       <div class="footer-nav layout-3-column">
         <div class="footer-nav__column">

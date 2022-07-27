@@ -30,6 +30,10 @@
       border-color: $color-additional;
     }
   }
+
+  @include media-mobile {
+    width: 170px;
+  }
 }
 
 .link-button {
