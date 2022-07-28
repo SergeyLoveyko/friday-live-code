@@ -35,8 +35,12 @@ h3 {
 h4 {
   @include font($size: 2.2rem, $height: 3.0rem, $weight: 600);
 
+  @include media-tablet {
+    @include font($size: 2.0rem, $height: 3.0rem)
+  }
+
   @include media-mobile {
-    @include font($size: 2rem, $height: 2.7rem);
+    @include font($size: 2.0rem, $height: 2.7rem);
   }
 }
 

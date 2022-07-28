@@ -1,10 +1,11 @@
 
-.logo-object {
+.logo {
+  display: flex;
+}
 
-  @include media-mobile {
-    width: 160px;
-  }  
-  
+.logo-object {
+  width: 160px;
+  height: 30px;
 }
 
 .logo-path{
