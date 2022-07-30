@@ -571,6 +571,7 @@ h5 {
 }
 
 .tag {
+  cursor: pointer;
   padding: 0 14px;
   border-radius: 90px;
   font-style: normal;
@@ -1022,6 +1023,9 @@ h5 {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+}
+.strategy_hidden {
+  display: none;
 }
 @media (max-width: 768px) {
   .strategy {
