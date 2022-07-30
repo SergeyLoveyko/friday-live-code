@@ -512,31 +512,31 @@ h5 {
 }
 
 .ico_play {
-  background-image: url("../../img/icons/play.svg");
+  background-image: url("../../src/img/icons/play.svg");
   width: 18px;
   height: 19px;
 }
 
 .ico_arrow {
-  background-image: url("../../img/icons/arrow.svg");
+  background-image: url("../../src/img/icons/arrow.svg");
   width: 12px;
   height: 17px;
 }
 
 .ico_snake {
-  background-image: url("../../img/icons/snake.svg");
+  background-image: url("../../src/img/icons/snake.svg");
   width: 18px;
   height: 14px;
 }
 
 .ico_heart {
-  background-image: url("../../img/icons/heart.svg");
+  background-image: url("../../src/img/icons/heart.svg");
   width: 17px;
   height: 15px;
 }
 
 .ico_clock {
-  background-image: url("../../img/icons/clock.svg");
+  background-image: url("../../src/img/icons/clock.svg");
   width: 15px;
   height: 17px;
 }
@@ -554,13 +554,13 @@ h5 {
 .ico_phon {
   width: 13px;
   height: 13px;
-  background-image: url("../../img/icons/phone.svg");
+  background-image: url("../../src/img/icons/phone.svg");
 }
 
 .ico_letter {
   width: 11px;
   height: 8px;
-  background-image: url("../../img/icons/letter.svg");
+  background-image: url("../../src/img/icons/letter.svg");
 }
 
 .tags {
@@ -888,7 +888,7 @@ h5 {
 
 .tools__container {
   padding-bottom: 90px;
-  background-image: url("../../img/backgrounds/tools-bg.svg");
+  background-image: url("../../src/img/backgrounds/tools-bg.svg");
   background-position: center bottom;
   background-size: 100%;
   background-repeat: no-repeat;
