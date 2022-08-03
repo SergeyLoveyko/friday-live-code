@@ -37,7 +37,6 @@ export class Article {
     }
     
     article.innerHTML = template;
-    console.log( article );
     return article;
   }
 }
