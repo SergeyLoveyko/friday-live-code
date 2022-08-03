@@ -1084,6 +1084,7 @@ h5 {
 @media (max-width: 768px) {
   .strategy {
     overflow: hidden;
+    padding-top: 200px;
   }
 }
 
