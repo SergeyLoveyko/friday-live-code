@@ -1,6 +1,7 @@
 import { Article } from "./js/Article";
 import { ArticleModal } from "./js/ArticleModal";
-import { Modal } from "./js/Modal"
+import { Modal } from "./js/Modal";
+
 
 const data = [
   {
@@ -71,6 +72,7 @@ const data = [
 
 window.onload = function() {
   console.log( 'Hello Rolling Scopes!' );
+  console.log( 'Hello RS!' );
 
   //  Render Articles
   if (data) {

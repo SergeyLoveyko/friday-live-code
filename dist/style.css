@@ -1,3 +1,6 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
+  \**************************************************************************************************************/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -523,31 +526,31 @@ h5 {
 }
 
 .ico_play {
-  background-image: url("../../src/img/icons/play.svg");
+  background-image: url(3f68dfbb37c1ddf9e46a.svg);
   width: 18px;
   height: 19px;
 }
 
 .ico_arrow {
-  background-image: url("../../src/img/icons/arrow.svg");
+  background-image: url(f92b72e6513148386654.svg);
   width: 12px;
   height: 17px;
 }
 
 .ico_snake {
-  background-image: url("../../src/img/icons/snake.svg");
+  background-image: url(74805b9894bd244e16f9.svg);
   width: 18px;
   height: 14px;
 }
 
 .ico_heart {
-  background-image: url("../../src/img/icons/heart.svg");
+  background-image: url(36f67bcee100da51aaad.svg);
   width: 17px;
   height: 15px;
 }
 
 .ico_clock {
-  background-image: url("../../src/img/icons/clock.svg");
+  background-image: url(00898d6d8f83139ec3d2.svg);
   width: 15px;
   height: 17px;
 }
@@ -565,13 +568,13 @@ h5 {
 .ico_phon {
   width: 13px;
   height: 13px;
-  background-image: url("../../src/img/icons/phone.svg");
+  background-image: url(224a04ccff0f95d86cac.svg);
 }
 
 .ico_letter {
   width: 11px;
   height: 8px;
-  background-image: url("../../src/img/icons/letter.svg");
+  background-image: url(be21d181da88a2ed99af.svg);
 }
 
 .tags {
@@ -942,7 +945,7 @@ h5 {
 
 .tools__container {
   padding-bottom: 90px;
-  background-image: url("../../src/img/backgrounds/tools-bg.svg");
+  background-image: url(fa5e18c602f7ee595fe7.svg);
   background-position: center bottom;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1344,4 +1347,4 @@ h5 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map*/
