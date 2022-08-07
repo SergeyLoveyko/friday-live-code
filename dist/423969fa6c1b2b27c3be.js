@@ -534,6 +534,66 @@
       }();
       /***/
 
+    },
+
+    /***/
+    "./src/js/burger.js":
+    /*!**************************!*\
+      !*** ./src/js/burger.js ***!
+      \**************************/
+
+    /***/
+    function srcJsBurgerJs(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export */
+
+
+      __webpack_require__.d(__webpack_exports__, {
+        /* harmony export */
+        "burger": function burger() {
+          return (
+            /* binding */
+            _burger
+          );
+        }
+        /* harmony export */
+
+      });
+
+      var burgerMenu;
+      var nav;
+      var lineMenu;
+      var iconBurger;
+      var menuWrapTwo;
+      var hamburger;
+      var lineBurger;
+      var headerNav;
+      var HTMLBody;
+
+      function _burger() {
+        burgerMenu = document.querySelector('.hamburger');
+        lineBurger = document.querySelector('.hamburger__line');
+        headerNav = document.querySelector('.header__nav');
+        HTMLBody = document.body; // iconBurger = document.querySelector('.icon__hamburger');
+        // menuWrapTwo = document.querySelector('.menu-wrapper');
+        // hamburger = document.querySelector('.hamburger-menu');
+        // burgerMenu.addEventListener('click', addBurgerOverlay);
+
+        burgerMenu.addEventListener('click', burgerChange);
+      }
+
+      function addBurgerOverlay() {
+        iconBurger.classList.toggle('_active');
+        console.log('Ok Burger');
+      }
+
+      function burgerChange() {
+        lineBurger.classList.toggle('animate');
+        headerNav.classList.toggle('header__nav-active');
+        HTMLBody.classList.toggle('overlay-not');
+      }
+      /***/
+
     }
     /******/
 
@@ -723,6 +783,12 @@
     var _js_Modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./js/Modal */
     "./src/js/Modal.js");
+    /* harmony import */
+
+
+    var _js_burger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./js/burger */
+    "./src/js/burger.js");
 
     var data = [{
       id: 1,
@@ -902,6 +968,8 @@
       var modal = new _js_ArticleModal__WEBPACK_IMPORTED_MODULE_1__.ArticleModal('article-modal', article);
       modal.renderModal();
     };
+
+    (0, _js_burger__WEBPACK_IMPORTED_MODULE_3__.burger)();
   })(); // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 
 

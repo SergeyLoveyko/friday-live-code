@@ -1,37 +1,98 @@
-%hamburger-line {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  background: $color-hamburger;
-  border-radius: 5px;
-  height: 3px;
-  width: 100%;
-}
+// %hamburger-line {
+//   content: "";
+//   display: inline-block;
+//   position: absolute;
+//   background: $color-hamburger;
+//   border-radius: 5px;
+//   height: 3px;
+//   width: 100%;
+// }
 
 .hamburger {
+  cursor: pointer;
   display: none;
   position: relative;
   margin-right: 37px;
-  width: 31px;
-  height: 25px;
+  width: $bar-width;
+  height: $bar-height + $bar-spacing*2;
 
-  &::before {
-    @extend %hamburger-line;
-    top: calc( 50% - 1.5px );
-    left: 0;
-  }
+  // &::before {
+  //   @extend %hamburger-line;
+  //   top: calc( 50% - 1.5px );
+  //   left: 0;
+  // }
 
-  &::after {
-    @extend %hamburger-line;
-    bottom: 0;
-    left: 0;
-  }
+  // &::after {
+  //   @extend %hamburger-line;
+  //   bottom: 0;
+  //   left: 0;
+  // }
+
 
   @include media-tablet{
     display: inline-block;
   }
 }
 
+// .hamburger__line
+// .hamburger__line:after,
+// .hamburger__line:before {
+//   width: $bar-width;
+//   height: $bar-height;
+// }
+
+// .hamburger__line {
+//   @include burger();
+
+//   &:after {
+//     @include burger();
+//   }
+
+//   &:before {
+//     @include burger();
+//   }
+// }
+
 .hamburger__line {
-  @extend %hamburger-line;
+  @include burger();
+	position: relative;
+	transform: translateY($bar-spacing);
+	background: rgb(0, 0, 0);
+	transition: all 0ms 300ms;
+
+  &.animate {
+    background: rgba(255, 255, 255, 0); 
+  }
+
+  &:before {
+    @include burger();
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: $bar-spacing;
+    background: rgb(0, 0, 0);
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  &:after {
+    @include burger();
+    content: "";
+    position: absolute;
+    left: 0;
+    top: $bar-spacing;
+    background: rgb(0, 0, 0);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  &.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+  }
+
+  &.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+  }
 }

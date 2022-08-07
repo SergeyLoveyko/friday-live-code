@@ -1,0 +1,23 @@
+/* Error: Missing argument $bar-width.
+ *   ,--> src\sass\base\_hamburger.scss
+ * 46|   @include burger;
+ *   |   ^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> src\sass\abstract\_mixins.scss
+ * 8 | @mixin burger ($bar-width, $bar-height) {
+ *   |        ================================ declaration
+ *   '
+ *   src\sass\base\_hamburger.scss 46:3  burger()
+ *   src\sass\base\_hamburger.scss 46:3  @import
+ *   src\sass\style.scss 16:9            root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $bar-width.\a   \250c \2500 \2500 > src\\sass\\base\\_hamburger.scss\a 46\2502    @include burger;\d\a   \2502    ^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > src\\sass\\abstract\\_mixins.scss\a 8 \2502  @mixin burger ($bar-width, $bar-height) {\d\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   src\\sass\\base\\_hamburger.scss 46:3  burger()\a   src\\sass\\base\\_hamburger.scss 46:3  @import\a   src\\sass\\style.scss 16:9            root stylesheet";
+}

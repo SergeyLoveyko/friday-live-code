@@ -1,6 +1,7 @@
 import { Article } from "./js/Article";
 import { ArticleModal } from "./js/ArticleModal";
 import { Modal } from "./js/Modal";
+import { burger } from "./js/burger"
 
 
 const data = [
@@ -193,3 +194,5 @@ const renderArticleModalWindow = (article) => {
   let modal = new ArticleModal ('article-modal', article);
   modal.renderModal();
 };
+
+burger();

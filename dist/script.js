@@ -288,6 +288,50 @@ var Modal = /*#__PURE__*/function () {
   return Modal;
 }();
 
+/***/ }),
+
+/***/ "./src/js/burger.js":
+/*!**************************!*\
+  !*** ./src/js/burger.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "burger": () => (/* binding */ burger)
+/* harmony export */ });
+var burgerMenu;
+var nav;
+var lineMenu;
+var iconBurger;
+var menuWrapTwo;
+var hamburger;
+var lineBurger;
+var headerNav;
+var HTMLBody;
+function burger() {
+  burgerMenu = document.querySelector('.hamburger');
+  lineBurger = document.querySelector('.hamburger__line');
+  headerNav = document.querySelector('.header__nav');
+  HTMLBody = document.body; // iconBurger = document.querySelector('.icon__hamburger');
+  // menuWrapTwo = document.querySelector('.menu-wrapper');
+  // hamburger = document.querySelector('.hamburger-menu');
+  // burgerMenu.addEventListener('click', addBurgerOverlay);
+
+  burgerMenu.addEventListener('click', burgerChange);
+}
+
+function addBurgerOverlay() {
+  iconBurger.classList.toggle('_active');
+  console.log('Ok Burger');
+}
+
+function burgerChange() {
+  lineBurger.classList.toggle('animate');
+  headerNav.classList.toggle('header__nav-active');
+  HTMLBody.classList.toggle('overlay-not');
+}
+
 /***/ })
 
 /******/ 	});
@@ -357,6 +401,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_Article__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/Article */ "./src/js/Article.js");
 /* harmony import */ var _js_ArticleModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/ArticleModal */ "./src/js/ArticleModal.js");
 /* harmony import */ var _js_Modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/Modal */ "./src/js/Modal.js");
+/* harmony import */ var _js_burger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/burger */ "./src/js/burger.js");
+
 
 
 
@@ -538,6 +584,8 @@ var renderArticleModalWindow = function renderArticleModalWindow(article) {
   var modal = new _js_ArticleModal__WEBPACK_IMPORTED_MODULE_1__.ArticleModal('article-modal', article);
   modal.renderModal();
 };
+
+(0,_js_burger__WEBPACK_IMPORTED_MODULE_3__.burger)();
 })();
 
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.

@@ -5,6 +5,11 @@
   line-height: $height;
 }
 
+@mixin burger () {
+  width: $bar-width;
+  height: $bar-height;
+}
+
 @mixin columns ($width) {
   display: flex;
   flex-wrap: wrap;
