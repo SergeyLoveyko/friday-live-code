@@ -33,6 +33,32 @@
   }
 
   @include media-mobile {
-    display: none;
+    // display: none;
+    display: flex;
+    position: absolute;
+    left: -50%;
+    top: 54%;
+    flex-direction: column;
+    transition-duration: .3s;
+
+    >.button {
+      margin-left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    >.button:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &.show-head-btn {
+      display: flex;
+      left: 50%;
+      transition-delay: 0.7s;
+    }
+
+
+    
+    
+
   }
 }

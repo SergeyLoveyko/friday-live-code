@@ -1,0 +1,18 @@
+/* Error: Expected digit.
+ *    ,
+ * 64 |       transition-duration: 1s.;
+ *    |                               ^
+ *    '
+ *   src\sass\layouts\_header.scss 64:31  @import
+ *   src\sass\style.scss 21:9             root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected digit.\a    \2577 \a 64 \2502        transition-duration: 1s.;\d\a    \2502                                ^\a    \2575 \a   src\\sass\\layouts\\_header.scss 64:31  @import\a   src\\sass\\style.scss 21:9             root stylesheet";
+}

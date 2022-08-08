@@ -301,35 +301,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "burger": () => (/* binding */ burger)
 /* harmony export */ });
 var burgerMenu;
-var nav;
-var lineMenu;
-var iconBurger;
-var menuWrapTwo;
-var hamburger;
 var lineBurger;
 var headerNav;
 var HTMLBody;
+var showHeaderBtn;
 function burger() {
   burgerMenu = document.querySelector('.hamburger');
   lineBurger = document.querySelector('.hamburger__line');
   headerNav = document.querySelector('.header__nav');
-  HTMLBody = document.body; // iconBurger = document.querySelector('.icon__hamburger');
-  // menuWrapTwo = document.querySelector('.menu-wrapper');
-  // hamburger = document.querySelector('.hamburger-menu');
-  // burgerMenu.addEventListener('click', addBurgerOverlay);
-
-  burgerMenu.addEventListener('click', burgerChange);
+  HTMLBody = document.body;
+  showHeaderBtn = document.querySelector('.header__buttons');
+  burgerMenu.addEventListener('click', showNavigation);
 }
 
-function addBurgerOverlay() {
-  iconBurger.classList.toggle('_active');
-  console.log('Ok Burger');
-}
-
-function burgerChange() {
+function showNavigation() {
   lineBurger.classList.toggle('animate');
-  headerNav.classList.toggle('header__nav-active');
+  headerNav.classList.toggle('header__nav_active');
   HTMLBody.classList.toggle('overlay-not');
+  showHeaderBtn.classList.toggle('show-head-btn');
 }
 
 /***/ })
