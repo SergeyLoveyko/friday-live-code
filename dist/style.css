@@ -749,7 +749,7 @@ h5 {
     display: flex;
     position: absolute;
     left: -50%;
-    top: 54%;
+    top: 380px;
     flex-direction: column;
     transition-duration: 0.3s;
   }

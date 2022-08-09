@@ -33,11 +33,10 @@
   }
 
   @include media-mobile {
-    // display: none;
     display: flex;
     position: absolute;
     left: -50%;
-    top: 54%;
+    top: 380px;
     flex-direction: column;
     transition-duration: .3s;
 
@@ -55,10 +54,5 @@
       left: 50%;
       transition-delay: 0.7s;
     }
-
-
-    
-    
-
   }
 }

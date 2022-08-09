@@ -16,42 +16,10 @@
   width: $bar-width;
   height: $bar-height + $bar-spacing*2;
 
-  // &::before {
-  //   @extend %hamburger-line;
-  //   top: calc( 50% - 1.5px );
-  //   left: 0;
-  // }
-
-  // &::after {
-  //   @extend %hamburger-line;
-  //   bottom: 0;
-  //   left: 0;
-  // }
-
-
   @include media-tablet{
     display: inline-block;
   }
 }
-
-// .hamburger__line
-// .hamburger__line:after,
-// .hamburger__line:before {
-//   width: $bar-width;
-//   height: $bar-height;
-// }
-
-// .hamburger__line {
-//   @include burger();
-
-//   &:after {
-//     @include burger();
-//   }
-
-//   &:before {
-//     @include burger();
-//   }
-// }
 
 .hamburger__line {
   @include burger();
